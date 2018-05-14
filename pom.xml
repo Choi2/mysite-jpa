@@ -15,7 +15,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 
-	
+
 
 	<dependencies>
 		<!-- Spring Core -->
@@ -195,7 +195,7 @@
 					<warSourceDirectory>webapp</warSourceDirectory>
 				</configuration>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>tomcat-maven-plugin</artifactId>
@@ -206,7 +206,13 @@
 					<password>flslwl12</password>
 				</configuration>
 			</plugin>
-			
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.8.2</version>
+			</plugin>
+
 		</plugins>
 	</build>
 
